@@ -16,7 +16,7 @@ class DataLoader:
         self.logger = logging.getLogger("data_loader")
 
         # Index storage directory
-        self.storage_dir = storage_dir
+        self.storage_dir = os.path.dirname(os.path.realpath(__file__))
 
         # Data directories and files to load
         self.simple_data_dir = simple_data_dir
