@@ -14,7 +14,7 @@ class Config:
         config.read(self.CONFIG_FILE_PATH)
 
         # OpenAI API key
-        self.openai_key = config['OPENAI']['API_KEY']
+        self.openai_key = st.secrets["API_KEY"]
         self.__set_env_openai_key()
 
         # Logging level
