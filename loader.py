@@ -16,7 +16,7 @@ class DataLoader:
         self.logger = logging.getLogger("data_loader")
 
         # Index storage directory
-        self.storage_dir = "./storage"
+        self.storage_dir = "/mount/src/chatbot-hotro-hoc-tap/storage"
 
         # Data directories and files to load
         self.simple_data_dir = simple_data_dir
